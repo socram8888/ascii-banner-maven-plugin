@@ -1,0 +1,27 @@
+# Force all text files to be LF
+* text=lf
+
+# Project source files
+*.c text diff=cpp
+*.css text
+*.diff text
+*.h text diff=cpp
+*.html text
+*.java text diff=java
+*.js text
+*.properties text
+*.py text diff=python
+*.sh text
+*.txt text
+*.xml text diff=html
+*.yml text
+
+# Binaries
+*.bmp binary
+*.dll binary
+*.dylib binary
+*.exe binary
+*.jnilib binary
+*.jpg binary
+*.png binary
+*.so binary

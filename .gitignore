@@ -1,0 +1,4 @@
+/target/
+test.yml
+dependency-reduced-pom.xml
+*.log
