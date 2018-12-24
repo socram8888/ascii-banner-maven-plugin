@@ -76,7 +76,7 @@
 				<version>2.5.3</version>
 				<configuration>
 					<releaseProfiles>release</releaseProfiles>
-					<tagNameFormat>v${project.version}</tagNameFormat>
+					<tagNameFormat>v@{version}</tagNameFormat>
 				</configuration>
 			</plugin>
 		</plugins>
