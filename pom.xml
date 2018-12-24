@@ -8,10 +8,20 @@
 	<name>ASCII banner Maven plugin</name>
 	<description>Displays a customizable message after building projects</description>
 	<url>https://github.com/socram8888/ascii-banner-maven-plugin</url>
+	<inceptionYear>2018</inceptionYear>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<developers>
+		<developer>
+			<name>Marcos Del Sol Vives</name>
+			<email>marcos@orca.pet</email>
+			<url>https://github.com/socram8888/</url>
+			<timezone>Europe/Madrid</timezone>
+		</developer>
+	</developers>
 
 	<licenses>
 		<license>
@@ -23,6 +33,8 @@
 
 	<scm>
 		<url>https://github.com/socram8888/ascii-banner-maven-plugin</url>
+		<connection>scm:git:https://github.com/socram8888/ascii-banner-maven-plugin</connection>
+		<developerConnection>scm:git:https://github.com/socram8888/ascii-banner-maven-plugin</developerConnection>
 	</scm>
 
 	<distributionManagement>
