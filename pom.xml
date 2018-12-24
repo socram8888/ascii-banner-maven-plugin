@@ -1,4 +1,4 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pet.orca</groupId>
 	<artifactId>ascii-banner-maven-plugin</artifactId>
@@ -33,8 +33,8 @@
 
 	<scm>
 		<url>https://github.com/socram8888/ascii-banner-maven-plugin</url>
-		<connection>scm:git:https://github.com/socram8888/ascii-banner-maven-plugin</connection>
-		<developerConnection>scm:git:https://github.com/socram8888/ascii-banner-maven-plugin</developerConnection>
+		<connection>scm:git:git@github.com:socram8888/ascii-banner-maven-plugin.git</connection>
+		<developerConnection>scm:git:git@github.com:socram8888/ascii-banner-maven-plugin.git</developerConnection>
 	</scm>
 
 	<distributionManagement>
