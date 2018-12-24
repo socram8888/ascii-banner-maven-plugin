@@ -37,10 +37,18 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		this.listeners = listeners;
 	}
 
+	/**
+	 * Adds a new {@link ExecutionListener} to the list.
+	 * @param listener new listener to add, not null
+	 */
 	public void add(@NonNull ExecutionListener listener) {
 		listeners.add(listener);
 	}
 
+	/**
+	 * Calls the {@code projectDiscoveryStarted} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void projectDiscoveryStarted(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -48,6 +56,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code sessionStarted} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void sessionStarted(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -55,6 +67,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code sessionEnded} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void sessionEnded(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -62,6 +78,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code projectStarted} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void projectSkipped(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -69,6 +89,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the projectSkipped method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void projectStarted(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -76,6 +100,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code projectSucceeded} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void projectSucceeded(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -83,6 +111,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code projectFailed} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void projectFailed(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -90,6 +122,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code mojoSkipped} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void mojoSkipped(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -97,6 +133,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code mojoStarted} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void mojoStarted(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -104,6 +144,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code mojoSucceeded} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void mojoSucceeded(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -111,6 +155,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code mojoFailed} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void mojoFailed(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -118,6 +166,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code forkStarted} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void forkStarted(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -125,6 +177,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code forkSucceeded} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void forkSucceeded(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -132,6 +188,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code forkFailed} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void forkFailed(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -139,6 +199,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code forkedProjectStarted} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void forkedProjectStarted(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -146,6 +210,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code forkedProjectSucceeded} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void forkedProjectSucceeded(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {
@@ -153,6 +221,10 @@ public class ChainedExecutionListener extends AbstractExecutionListener {
 		}
 	}
 
+	/**
+	 * Calls the {@code forkedProjectFailed} method of the children.
+	 * @param ee execution event
+	 */
 	@Override
 	public void forkedProjectFailed(ExecutionEvent ee) {
 		for (ExecutionListener listener : listeners) {

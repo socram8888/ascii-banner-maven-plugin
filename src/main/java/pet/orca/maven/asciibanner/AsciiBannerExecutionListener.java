@@ -41,6 +41,10 @@ public class AsciiBannerExecutionListener extends AbstractExecutionListener {
 		this.logger = logger;
 	}
 
+	/**
+	 * Logs the appropiate banner(s) depending on compilation result.
+	 * @param event execution event
+	 */
 	@Override
 	public void sessionEnded(ExecutionEvent event) {
 		if (!logger.isInfoEnabled()) {

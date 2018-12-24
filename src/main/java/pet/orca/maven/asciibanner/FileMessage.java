@@ -36,6 +36,12 @@ public class FileMessage {
 	private File file;
 
 	/**
+	 * Creates a new instance with no parameters set.
+	 */
+	public FileMessage() {
+	}
+
+	/**
 	 * Outputs the message and/or file to info level of debug.
 	 * @param log log handle
 	 */
