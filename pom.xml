@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pet.orca</groupId>
 	<artifactId>ascii-banner-maven-plugin</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>maven-plugin</packaging>
 
 	<name>ASCII banner Maven plugin</name>
@@ -35,7 +35,8 @@
 		<url>https://github.com/socram8888/ascii-banner-maven-plugin</url>
 		<connection>scm:git:git@github.com:socram8888/ascii-banner-maven-plugin.git</connection>
 		<developerConnection>scm:git:git@github.com:socram8888/ascii-banner-maven-plugin.git</developerConnection>
-	</scm>
+	  <tag>v1.0</tag>
+  </scm>
 
 	<distributionManagement>
 		<snapshotRepository>
